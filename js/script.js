@@ -7,7 +7,7 @@ for (var i = 0; i < emailList.length; i++) {
         check = true;
     } 
 }
-if (check){
+if (check === true){
     alert('Accesso autorizzato');
 } else {
     alert('Accesso negato');
