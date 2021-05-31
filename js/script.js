@@ -12,3 +12,18 @@ if (check){
 } else {
     alert('Accesso negato');
 }
+
+
+var player = Math.floor(Math.random() * 6) + 1;
+    console.log(player);
+var computer = Math.floor(Math.random() * 6) + 1;
+    console.log(computer);
+
+if (player > computer) {
+    document.getElementById('dice').innerHTML = 'Hai vinto tu!!!';
+} else if (player == computer) {
+    document.getElementById('dice').innerHTML = 'Pareggiato!!!';
+} else {
+    document.getElementById('dice').innerHTML = 'Ha vinto il computer!!!';
+}
+  
