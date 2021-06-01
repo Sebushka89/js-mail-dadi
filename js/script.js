@@ -5,10 +5,11 @@ var check = false;
 for (var i = 0; i < emailList.length; i++) {
     if (emailList[i] === emailUser) {
         check = true;
+        break;
     } 
 }
 if (check === true){
-    alert('Accesso autorizzato');
+    document.getElementById('benvenuto').innerHTML = 'Accesso consentito!!!';
 } else {
     alert('Accesso negato');
 }
